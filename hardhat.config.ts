@@ -15,12 +15,14 @@ import "solidity-coverage";
 
 dotenv.config();
 
+
 const chainIds = {
   // local
   localhost: 31337,
 
   // testnet
   goerli: 5,
+  "sepolia-test": 11155111,
   "optimism-goerli": 420,
   "fantom-testnet": 4002,
   "pgn-sepolia": 58008,
@@ -170,6 +172,14 @@ const config: HardhatUserConfig = {
     },
 
     // Test Networks
+    sepolia: createTestnetConfig("sepolia-test", `https://eth-sepolia.g.alchemy.com/v2/${alchemyKey}`),
+    "sepolia-test": {
+      accounts: [deployPrivateKey],
+      chainId: chainIds["sepolia-test"], // Sepolia testnet chain ID
+      url: `https://eth-sepolia.g.alchemy.com/v2/${alchemyKey}`,
+      gasPrice: 20000000000,
+    },
+
     goerli: createTestnetConfig("goerli"),
     "optimism-goerli": {
       accounts: [deployPrivateKey],
@@ -345,3 +355,5 @@ const config: HardhatUserConfig = {
 };
 
 export default config;
+
+

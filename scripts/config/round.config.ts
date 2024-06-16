@@ -15,6 +15,11 @@ export const roundParams: DeployParams = {
     roundImplementationContract: "0x10825896637298473877b6610BB380be51D20D04",
     roundContract: "",
   },
+  sepolia: {
+    roundFactoryContract: "0xa434989F21037645Fa06cc2bfBF4fcBD4820B2Ef",
+    roundImplementationContract: "0x24F1d2Cf5b82C395b7094434aa6Bd42A33D1F012",
+    roundContract: "",
+  },
   goerli: {
     roundFactoryContract: "0x60EF85011E1480BD21dFa636FDa7F6e2e3dbbDa7",
     roundImplementationContract: "0x71ffC79b386e8477A6deE69eb5abc50f7c614058",

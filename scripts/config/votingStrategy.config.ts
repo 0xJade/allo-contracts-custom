@@ -13,6 +13,11 @@ export const QFVotingParams: DeployParams = {
     implementation: "0xDdC143f736f912Ae6AAF2fceF2C78b267745B0f2",
     contract: "",
   },
+  sepolia: {
+    factory: "0xb70DACa95029dafCC83f59A41cDA1c48129004ec",
+    implementation: "0xb4CFb6C5FFC8C03645db72C15aaFB610a5E85cCc",
+    contract: "0x818A3C8F82667bd222faF84a954F35d2b0Eb6a78",
+  },
   goerli: {
     factory: "0x4B53418e0034CC135C9E0a54CcAe5a1F2e675a64",
     implementation: "0x28505e861cd0a4A09B78Fd87F515148B7E359524",

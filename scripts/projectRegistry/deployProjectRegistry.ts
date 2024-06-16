@@ -3,8 +3,12 @@ import { LedgerSigner } from "@anders-t/ethers-ledger";
 import { confirmContinue, prettyNum } from "../../utils/script-utils";
 
 async function main() {
+
+  console.log(hre.network.config.chainId)
+
   const network = await ethers.provider.getNetwork();
   const networkName = await hre.network.name;
+
   let account;
   let accountAddress;
 

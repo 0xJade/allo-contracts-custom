@@ -13,6 +13,11 @@ export const programParams: DeployParams = {
     programImplementationContract: "0x0BFA0AAF5f2D81f859e85C8E82A3fc5b624fc6E8",
     programContract: "",
   },
+  sepolia: {
+    programFactoryContract: "0xA3b651822698d49065370C01c55D388F2380f9af",
+    programImplementationContract: "0x25be64Ce8F5DF44eB0Cdb354B34bdFCA60B0d62B",
+    programContract: "0xd071F2330D716c47F86000a223AEA1A0355a66bF",
+  },
   goerli: {
     programFactoryContract: "0x2562e3035905e62723fe85467bA4c9314df7A5e4",
     programImplementationContract: "0xb4373B79bf5e2d397f81a9974ff66257B13E6c02",
